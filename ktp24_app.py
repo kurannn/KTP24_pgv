@@ -1,10 +1,8 @@
 """
 Created on Wed Jan 17 10:00:57 2024
 @author:  Fahrettin Kuran
-Title:    Turkiye-Specific Ground Motion Model for Peak Ground Velocity (PGV) (KTP24)
-Paper:    Kuran, F., Tanircan, G., Pashaei, E (2024), Development of peak ground 
-        velocity prediction models with machine learning techniques: A case study 
-        for Turkiye.
+Title:    Turkiye-Specific Ground Motion Model for Peak Ground Velocity (PGV)
+Paper:    Kuran, F., Tanircan, G., Pashaei, E (2024), Machine learning based ground motion predictive model for horizontal component of peak ground velocity in Turkiye.
 Streamlit app
 """
 
@@ -23,7 +21,7 @@ textColor="#31333F"
 font="Sans serif"
 
 col1, col2 = st.columns([8, 2])
-col1.subheader("Turkiye-Specific Ground Motion Model for Peak Ground Velocity (PGV) (KTP24)")
+col1.subheader("Turkiye-Specific Ground Motion Model for Peak Ground Velocity (PGV)")
 col2.image("Kandilli_logo.png", use_column_width=True)
 
 text = """
@@ -84,7 +82,7 @@ input_features, actual_values = user_input_features()
 
 st.subheader("Summary of your inputs")
 
-input_df = pd.DataFrame({'Estimator parameter': ['Mw', 'Vs30', 'Dip', 'Rjb', 'Rrup', 'Repi', 'SoF'],
+input_df = pd.DataFrame({'Estimator parameters': ['Mw', 'Vs30', 'Dip', 'Rjb', 'Rrup', 'Repi', 'SoF'],
                           'Value': actual_values})
 
 
@@ -102,7 +100,7 @@ if st.button("Submit"):
 
 
 paper = """
-<strong>Publication:</strong> Kuran, F., Tanircan, G., Pashaei, E (2024), Development of peak ground velocity prediction models with machine learning techniques: A case study for Turkiye.
+<strong>Publication:</strong> Kuran, F., Tanircan, G., Pashaei, E (2024), Machine learning based ground motion predictive model for horizontal component of peak ground velocity in Turkiye.
 """
 line_height = "1.2"
 font_size = "14px"
