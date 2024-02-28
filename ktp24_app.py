@@ -2,7 +2,7 @@
 Created on Wed Jan 17 10:00:57 2024
 @author:  Fahrettin Kuran
 Title:    Turkiye-Specific Ground Motion Model for Peak Ground Velocity (PGV)
-Paper:    Kuran, F., Tanircan, G., Pashaei, E (2024), Machine learning based ground motion predictive model for horizontal component of peak ground velocity in Turkiye.
+Paper:    Kuran, F., Tanircan, G., Pashaei, E (2024), Comparative analysis of machine learning techniques for predicting peak ground velocity.
 Streamlit app
 """
 
@@ -100,7 +100,7 @@ if st.button("Submit"):
 
 
 paper = """
-<strong>Publication:</strong> Kuran, F., Tanircan, G., Pashaei, E (2024), Machine learning based ground motion predictive model for horizontal component of peak ground velocity in Turkiye.
+<strong>Publication:</strong> Kuran, F., Tanircan, G., Pashaei, E (2024), Comparative analysis of machine learning techniques for predicting peak ground velocity.
 """
 line_height = "1.2"
 font_size = "14px"
